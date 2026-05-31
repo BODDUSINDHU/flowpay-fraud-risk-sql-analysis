@@ -1,0 +1,333 @@
+# 📊 FlowPay Fraud & Revenue Risk Analysis — Key Insights
+
+## Executive Summary
+
+This project analyzes payment transactions, fraud behavior, refunds, operational failures, and user risk patterns within a simulated fintech payment ecosystem.
+
+The analysis combines:
+
+* Fraud analytics
+* Revenue leakage analysis
+* Behavioral segmentation
+* Velocity detection
+* Retry recovery analytics
+* Geographic anomaly detection
+* Risk scoring
+
+The goal was to identify:
+
+* major revenue leakage drivers,
+* operational inefficiencies,
+* fraud attack patterns,
+* and high-risk user behaviors.
+
+---
+
+# 💰 Revenue & Payment Funnel Insights
+
+## Platform-Level Revenue Flow
+
+| Metric                  | Value    |
+| ----------------------- | -------- |
+| Total Attempted Volume  | ₹5.65B   |
+| Successful Payments     | ₹4.95B   |
+| Failed Payments         | ₹562.13M |
+| Fraudulent Transactions | ₹136.27M |
+| Refund Amount           | ₹109.86M |
+| Net Revenue Retained    | ₹4.84B   |
+| Net Revenue Retention   | 85.69%   |
+
+## Key Findings
+
+* Nearly **14.31% of transaction value leaked** due to failures, fraud, and refunds.
+* Failed transactions contributed the largest revenue loss component.
+* Fraud and refund leakage were materially smaller than operational payment failures.
+
+## Business Insight
+
+Operational payment reliability has a larger financial impact than direct fraud losses.
+
+---
+
+# 💳 Payment Method Insights
+
+## UPI Dominates Platform Revenue
+
+UPI generated the highest transaction volume and retained revenue across all payment methods.
+
+## Card Payments Showed Higher Failure Rates
+
+Credit Card and Debit Card payments experienced the highest authorization failure rates (~10.8%).
+
+## Key Findings
+
+* UPI carried elevated fraud exposure relative to cards.
+* Wallets showed relatively stable operational performance.
+* Card-based payment flows require optimization.
+
+## Business Insight
+
+Improving card authorization and payment gateway routing can significantly reduce revenue leakage.
+
+---
+
+# 🏪 Merchant Category Insights
+
+## Highest Revenue Categories
+
+Top-performing categories included:
+
+* Electronics
+* Fuel
+* Food & Dining
+* Education
+* Telecom
+
+## Highest Risk Categories
+
+### Gaming
+
+* Highest fraud rate
+* Highest refund rate
+
+### Real Estate
+
+* Elevated refund exposure
+
+### Utilities & Grocery
+
+* Higher payment failure rates
+
+## Business Insight
+
+Certain merchant categories generate strong revenue but carry elevated operational and fraud risk.
+
+---
+
+# 👤 User Segment Insights
+
+## Normal Users Drive Platform Revenue
+
+The majority of revenue and transactions came from standard user segments.
+
+## High-Value Low-Activity Users
+
+This segment demonstrated:
+
+* lowest fraud rates,
+* lowest failure rates,
+* highest revenue retention.
+
+## High-Activity Low-Value Users
+
+This segment showed:
+
+* highest operational failure rates,
+* lower revenue efficiency,
+* elevated behavioral risk.
+
+## Business Insight
+
+High transaction frequency without proportional revenue contribution is a strong operational risk signal.
+
+---
+
+# 📱 Multi-Device Behavior Insights
+
+## Device Usage Distribution
+
+* ~90% of users operated on 1–2 devices.
+* Only a small segment used 4+ devices.
+
+## Key Findings
+
+* Fraud rates remained relatively stable across device groups.
+* Device count alone was not a strong standalone fraud predictor.
+
+## Business Insight
+
+Device behavior becomes more valuable when combined with velocity and geographic signals.
+
+---
+
+# 🌍 Geographic Movement Insights
+
+## Impossible Travel Detection
+
+Only a very small number of users exhibited suspicious city-switching behavior within unrealistic time windows.
+
+## Key Findings
+
+* Impossible travel behavior is rare but highly suspicious.
+* Most users demonstrated normal geographic movement patterns.
+
+## Business Insight
+
+Geographic anomaly detection provides a high-confidence fraud signal.
+
+---
+
+# ⚡ Velocity Analysis Insights
+
+## Transaction Burst Behavior
+
+Medium-velocity users:
+
+* contributed a significant share of transactions,
+* showed materially higher failure rates.
+
+## Key Findings
+
+* Rapid transaction bursts correlate strongly with operational instability.
+* High-speed activity is associated with elevated payment risk.
+
+## Business Insight
+
+Velocity monitoring is important for both fraud prevention and payment stability.
+
+---
+
+# 🔁 Retry Behavior Insights
+
+## Retry Recovery Performance
+
+Retry systems recovered approximately ₹140.58M in otherwise failed transaction value.
+
+## Key Findings
+
+* Retry recovery rate was approximately 25%.
+* Nearly 75% of failed transaction value remained unrecovered.
+
+## Business Insight
+
+Retry optimization represents a major revenue recovery opportunity.
+
+---
+
+# 🚨 Fraud Pattern Insights
+
+## Top Fraud Categories
+
+| Fraud Type       | Share  |
+| ---------------- | ------ |
+| Account Takeover | 22.55% |
+| Identity Theft   | 15.82% |
+| Device Spoofing  | 15.58% |
+| Card Not Present | 15.53% |
+
+## Key Findings
+
+* Authentication and identity-related fraud dominate the ecosystem.
+* Device manipulation and credential compromise are major attack vectors.
+
+## Business Insight
+
+Account security and device intelligence systems should be prioritized.
+
+---
+
+# 🔄 Refund Insights
+
+## Top Refund Drivers
+
+| Refund Reason         | Share  |
+| --------------------- | ------ |
+| Wrong Amount Charged  | 22.64% |
+| Duplicate Transaction | 19.10% |
+| Merchant Error        | 14.01% |
+
+## Key Findings
+
+* Billing inconsistencies and duplicate transactions are major operational issues.
+* Fulfillment and merchant-quality problems contribute significantly to refunds.
+
+## Business Insight
+
+Operational quality improvements can directly reduce post-payment revenue leakage.
+
+---
+
+# 🧠 Risk Scoring Model Insights
+
+## Final Risk Segmentation
+
+| Risk Level     | Users  |
+| -------------- | ------ |
+| 🚨 High Risk   | 3,573  |
+| 🟡 Medium Risk | 11,060 |
+| 🟢 Low Risk    | 10,367 |
+
+## Key Findings
+
+* High-risk users showed:
+
+  * elevated fraud rates,
+  * elevated failure rates,
+  * strong association with reported fraud.
+
+* Low-risk users demonstrated stable transaction behavior with minimal fraud exposure.
+
+## Business Insight
+
+Behavior-based risk scoring significantly improves user risk differentiation.
+
+---
+
+# 🎯 Strategic Conclusions
+
+## 1. Payment Failures Are the Largest Revenue Leakage Source
+
+Operational inefficiencies contribute more revenue loss than direct fraud.
+
+---
+
+## 2. Fraud Is Primarily Identity & Authentication Driven
+
+Account takeover, identity theft, and device spoofing dominate fraud activity.
+
+---
+
+## 3. Retry Systems Provide Meaningful Revenue Recovery
+
+Improved retry orchestration can recover substantial transaction value.
+
+---
+
+## 4. Behavioral Signals Improve Fraud Detection
+
+Velocity, retries, device usage, and geographic movement provide strong fraud intelligence signals.
+
+---
+
+## 5. Risk Scoring Is More Effective Than Static Rules
+
+Combining:
+
+* transaction behavior,
+* retries,
+* velocity,
+* device patterns,
+* city movement,
+* and user value
+
+creates a stronger fraud detection framework.
+
+---
+
+# 📌 Final Outcome
+
+This project evolved into a complete:
+
+* fraud analytics system,
+* revenue leakage investigation,
+* behavioral risk framework,
+* and SQL-based fraud scoring engine.
+
+The project demonstrates:
+
+* advanced SQL analytics,
+* window functions,
+* segmentation modeling,
+* KPI design,
+* fraud intelligence,
+* and business-oriented analytical storytelling.
